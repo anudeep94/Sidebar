@@ -7,6 +7,7 @@
 //
 
 #import "SidebarViewController.h"
+#import "PhotoViewController.h"
 
 @interface SidebarViewController () 
 
@@ -54,6 +55,26 @@ NSArray *menuItems;
     return cell;
 }
 
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    // Set the title of navigation bar by using the menu items
+    NSIndexPath *indexPath =[self. tableView indexPathForSelectedRow];
+    UINavigationController *destViewController = (UINavigationController*) segue.destinationViewController;
+    destViewController.title =[[menuItems objectAtIndex:indexPath.row] capitalizedString];
+    
+    //Set the photo if it navigates to photoview
+    if ([segue.identifier isEqualToString:@"showPhoto"]) {
+        UINavigationController *navController = segue.destinationViewController;
+        PhotoViewController *photoController =[navController childViewControllers].firstObject;
+        NSString *photoFilename= [NSString stringWithFormat:@"%@_photo", [menuItems objectAtIndex:indexPath.row
+                                                                       ]];
+        photoController.photoFilename = photoFilename;
+    
+    }
+    
+    
+    
+}
 
 
 @end

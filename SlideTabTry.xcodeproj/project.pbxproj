@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		843A8BDD1D2E13F1005D062C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843A8BDC1D2E13F1005D062C /* MapKit.framework */; };
+		843A8BDF1D2E13FC005D062C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843A8BDE1D2E13FC005D062C /* UIKit.framework */; };
+		843A8BE11D2E140C005D062C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843A8BE01D2E140C005D062C /* CoreLocation.framework */; };
+		843A8BE31D2E1428005D062C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843A8BE21D2E1428005D062C /* Foundation.framework */; };
+		843A8BE51D2E1438005D062C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 843A8BE41D2E1438005D062C /* CoreGraphics.framework */; };
 		843B9D6A1D26457700BAB492 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B9D691D26457700BAB492 /* main.m */; };
 		843B9D6D1D26457700BAB492 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B9D6C1D26457700BAB492 /* AppDelegate.m */; };
 		843B9D701D26457700BAB492 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 843B9D6F1D26457700BAB492 /* ViewController.m */; };
@@ -39,6 +44,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		843A8BDC1D2E13F1005D062C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		843A8BDE1D2E13FC005D062C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		843A8BE01D2E140C005D062C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		843A8BE21D2E1428005D062C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		843A8BE41D2E1438005D062C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		843B9D651D26457700BAB492 /* SlideTabTry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideTabTry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		843B9D691D26457700BAB492 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		843B9D6B1D26457700BAB492 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +93,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843A8BE51D2E1438005D062C /* CoreGraphics.framework in Frameworks */,
+				843A8BE31D2E1428005D062C /* Foundation.framework in Frameworks */,
+				843A8BE11D2E140C005D062C /* CoreLocation.framework in Frameworks */,
+				843A8BDF1D2E13FC005D062C /* UIKit.framework in Frameworks */,
+				843A8BDD1D2E13F1005D062C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +107,11 @@
 		843B9D5C1D26457700BAB492 = {
 			isa = PBXGroup;
 			children = (
+				843A8BE41D2E1438005D062C /* CoreGraphics.framework */,
+				843A8BE21D2E1428005D062C /* Foundation.framework */,
+				843A8BE01D2E140C005D062C /* CoreLocation.framework */,
+				843A8BDE1D2E13FC005D062C /* UIKit.framework */,
+				843A8BDC1D2E13F1005D062C /* MapKit.framework */,
 				843B9D671D26457700BAB492 /* SlideTabTry */,
 				843B9D661D26457700BAB492 /* Products */,
 			);
